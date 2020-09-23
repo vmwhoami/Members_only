@@ -16,7 +16,7 @@ class PostsController < ApplicationController
       flash[:succes] = "Your post has been created"
       redirect_to root_path
     else
-      flash.now[:error] = "Your post has not been created"
+      flash.now[:error] = "Some error occured"
       render :new
     end
   end
