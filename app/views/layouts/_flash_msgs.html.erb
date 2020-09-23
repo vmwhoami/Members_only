@@ -1,4 +1,7 @@
- <% flash.each do |type, msg|%>
- <p><%= type%></p>
-<p><%= msg%></p>
- <% end %>
+ 
+ <div class="flash">
+    <% flash.each do |type, msg|%>
+    <p><%= msg%></p>
+    <% end %>
+
+</div>
