@@ -3,14 +3,16 @@
 
 <div class="posts">
 <% @posts.each do |post| %>
-  <% if user_signed_in? %>
     <div class="post">
+  <% if user_signed_in? %>
+
 <h3 class="user">Post created by <%= post.user.name%></h3>
 
   <% end %>
 
 
 <p><%= post.body%></p> 
+<span><%= post.created_at%></span>
 </div>
 
 
