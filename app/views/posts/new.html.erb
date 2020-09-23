@@ -1,0 +1,8 @@
+<h1>Posts#new</h1>
+
+<%= form_with model:@post do |form| %>
+<%= form.label :body, "write some gossip", class: 'label' %>
+ <%= form.text_area :body %>
+ 
+ <%= form.submit 'Create post' %>
+<% end %>
