@@ -4,18 +4,12 @@
 <div class="posts">
 <% @posts.each do |post| %>
     <div class="post">
-  <% if user_signed_in? %>
-
-<h3 class="user">Post created by <%= post.user.name%></h3>
-
-  <% end %>
-
-
-<p><%= post.body%></p> 
-<span><%= post.created_at%></span>
-</div>
-
-
+    <h3 class="user">Post created  <%= post_authot(post) %></h3>
+     <p>
+      <%= postul(post)%>
+     </p> 
+     <span><%= post.created_at%></span>
+      </div>
 
 <% end %>
 </div>
